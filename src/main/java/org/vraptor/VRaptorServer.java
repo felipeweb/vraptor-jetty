@@ -36,6 +36,7 @@ public class VRaptorServer {
         server.setHandler(contexts);
         if (server.isStarted()) server.stop();
         server.start();
+        server.join();
     }
 
     private static WebAppContext loadContext(String webappDirLocation, String webXmlLocation) {
