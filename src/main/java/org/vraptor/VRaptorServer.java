@@ -73,7 +73,7 @@ public class VRaptorServer {
         return context;
     }
 
-    void restartContexts() {
+    private void restartContexts() {
         try {
             contexts.stop();
             contexts.start();
